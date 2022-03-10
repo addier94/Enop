@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Box, Typography } from '@mui/material';
-import { AdminNavbar } from '../admin';
 
-import { SideMenu } from '../ui';
+import { SideMenu } from '@/components/ui';
+import { AdminNavbar } from '@/components/admin';
 
 
 interface Props {

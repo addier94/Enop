@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
 import { Typography } from '@mui/material';
 
-import { ShopLayout } from '../components/layouts';
+import { ShopLayout } from '@/components/layouts';
 
-import { ProductList } from '../components/products';
-import { useProducts } from '../hooks';
+import { ProductList } from '@/components/products';
+import { useProducts } from '@/hooks/useProducts';
 
-import { FullScreenLoading } from '../components/ui';
+import BigLoading from '@/components/ui/BigLoading';
 
 
 const HomePage: NextPage = () => {
@@ -22,7 +22,7 @@ const HomePage: NextPage = () => {
 
         {
           isLoading
-            ? <FullScreenLoading />
+            ? <BigLoading />
             : <ProductList products={ products } />
         }
 

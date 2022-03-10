@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 import { ShopLayout } from '../../components/layouts';
 
 import { ProductList } from '../../components/products';
-import { useProducts } from '../../hooks';
+import { useProducts } from '@/hooks/useProducts';
 
 import { FullScreenLoading } from '../../components/ui';
 

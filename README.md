@@ -1,30 +1,31 @@
-# Next.js Telo Shop
-Para correr localmente, se necesita la base de datos.
+## Open [Demo](https://teslo-sell.herokuapp.com/ "Hobbit lifestyles")
+# Next.js Enop Shop
+
+Run in local require Data.
 ```
 docker-compose up -d
 ```
 
-* El -d, significa __detached__
+* -d, Mean __detached__
 
 
-
-## Configurar las variables de entorno
-Renombrar el archivo __.env.template__ a __.env__
+## Set environment Variables
+Rename file __.env.template__ to __.env__
 * MongoDB URL Local:
 ```
-MONGO_URL=mongodb://localhost:27017/teslodb
+MONGO_URL=mongodb://localhost:27017/enopdb
 ```
 
-* Reconstruir los módulos de node y levantar Next
+* Build node modules and run nextjs server
 ```
 yarn install
 yarn dev
 ```
 
 
-## Llenar la base de datos con información de pruebas
+## Populate the database with test information
 
-Llamara:
+Make request to:
 ```
 http://localhost:3000/api/seed
 ```

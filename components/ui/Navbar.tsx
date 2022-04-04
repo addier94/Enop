@@ -7,6 +7,8 @@ import { ClearOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-
 
 import { CartContext, UiContext } from '../../context';
 
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 export const Navbar = () => {
 
     const { asPath, push } = useRouter();
@@ -116,7 +118,10 @@ export const Navbar = () => {
 
 
                 <Button onClick={ toggleSideMenu }>
-                    Menú
+
+                    <MoreVertIcon />
+
+                    {/* Menú */}
                 </Button>
 
             </Toolbar>
